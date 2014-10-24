@@ -1,0 +1,19 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <td>Izena</td>
+            <td>Ikusi / entzun</td>
+        </tr>
+    </thead>
+<tbody>
+    <tr ng-repeat="hizlaria in hizlariak">
+        <td>
+            <a href="#/hizlaria/{{hizlaria.slug}}">
+                {{hizlaria.izena}} {{hizlaria.abizenak}}
+            </a>
+        </td>
+        <td ng-bind-html="hizlaria.biografia">
+        </td>
+    </tr>
+</tbody>
+</table>
