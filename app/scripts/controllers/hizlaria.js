@@ -8,10 +8,10 @@
  * Controller of the ahotanApp
  */
 angular.module('ahotanApp')
-  .controller('HizlariaCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('HizlariaCtrl', function ($scope, $routeParams, hizlariaService) {
+    hizlariaService.getHizlaria($routeParams.hizlaria)
+        .then(function(hizlaria) {
+            console.log(hizlaria.data);
+            $scope.hizlaria = hizlaria.data;
+        });
   });

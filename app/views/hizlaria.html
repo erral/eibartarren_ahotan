@@ -1,1 +1,33 @@
-<p>This is the hizlaria view.</p>
+<div id="hizlaria">
+
+    <h1>{{hizlaria.izena}} {{hizlaria.abizenak}}</h1>
+
+    <p class="description" ng-bind-html="hizlaria.biografia">
+        Hemen biografia
+    </p>
+
+    <h2>Pasarteak</h2>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <td>#</td>
+                <td>Izena</td>
+                <td>Ikusi / entzun </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="pasartea in hizlaria">
+                <td>#</td>
+                <td>
+                    {{pasartea.izenburua}}
+                </td>
+                <td>
+                    Audioa: {{pasartea.audioa_du}}<br/>
+                    Bideoa: {{pasartea.bideoa_du}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
