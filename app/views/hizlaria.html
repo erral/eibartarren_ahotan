@@ -46,8 +46,8 @@
                                 Entzun <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Itxi</span></button>
                               </div>
                               <div class="modal-body"
-                                ng-bind-html="pasartea.audioa_html">
-                                 {{pasartea.audioa_html}}
+                                ng-bind-html="pasartea.audio_player">
+                                {{pasartea.audio_player}}
                               </div>
                             </div>
                           </div>
@@ -62,13 +62,13 @@
 
                         <!-- Modal -->
                         <div class="modal fade" id="bideo-{{$index}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                          <div class="modal-dialog">
+                          <div class="modal-dialog modal-lg">
                             <div class="modal-content">
                               <div class="modal-header">
                                 Ikusi <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Itxi</span></button>
                               </div>
-                              <div class="modal-body" ng-bind-html="$sce.trustAsHtml(pasartea.bideoa_html)">
-
+                              <div class="modal-body" ng-bind-html="pasartea.bideo_player">
+                                {{pasartea.bideo_player}}
                               </div>
                             </div>
                           </div>
