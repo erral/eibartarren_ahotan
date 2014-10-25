@@ -8,10 +8,10 @@
  * Controller of the ahotanApp
  */
 angular.module('ahotanApp')
-  .controller('PasarteaCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('PasarteaCtrl', function ($scope, $routeParams, pasarteaService) {
+    pasarteaService.getPasartea($routeParams.pasartea)
+        .then(function(pasartea) {
+            console.log(pasartea.data);
+            $scope.pasartea = pasartea.data;
+        });
   });

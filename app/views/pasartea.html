@@ -1,1 +1,30 @@
-<p>This is the pasartea view.</p>
+<div id="pasartea">
+
+    <h1>{{pasartea.izenburua}}</h1>
+
+    <h2>Datuak</h2>
+    <dl>
+        <dt>Hizlariak</dt>
+        <dd>
+            <ul>
+                <li ng-repeat="hizlaria in pasartea.hizlariak">
+                    <a href="#/hizlaria/{{hizlaria.slug}}">
+                        {{hizlaria.izena}} {{hizlaria.abizenak}} ({{hizlaria.data_jaio}} - {{hizlaria.data_hil}})
+                    </a>
+                </li>
+            </ul>
+        </dd>
+        <dt>Iraupena</dt>
+        <dd>{{pasartea.iraupena}}</dd>
+    </dl>
+
+    <h2>Laburpena</h2>
+    <div id="laburpena" ng-bind-html="pasartea.laburpena">
+
+    </div>
+
+    <div id="transkripzioa" ng-if="pasartea.transkripzioa != null">
+        {{pasartea.transkripzioa}}
+    </div>
+
+ </div>

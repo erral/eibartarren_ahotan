@@ -10,8 +10,8 @@
 angular.module('ahotanApp')
   .service('hizlariaService', function hizlariaService($http) {
     return {
-      getHizlaria: function() {
-        var hizlaria = 'mari-carmen-agirre-berezibar';
+      getHizlaria: function(hizlaria) {
+
         var url = 'http://www.ahotsak.com/api/hizlariak/' + hizlaria + '/pasarteak/';
         var params = {
             giltza: 'emvUIWiLQMqSygTbRtrd',

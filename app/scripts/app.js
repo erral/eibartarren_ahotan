@@ -31,7 +31,7 @@ angular
         templateUrl: 'views/hizlaria.html',
         controller: 'HizlariaCtrl'
       })
-      .when('/pasartea', {
+      .when('/pasartea/:pasartea', {
         templateUrl: 'views/pasartea.html',
         controller: 'PasarteaCtrl'
       })
