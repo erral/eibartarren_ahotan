@@ -35,6 +35,10 @@ angular
         templateUrl: 'views/pasartea.html',
         controller: 'PasarteaCtrl'
       })
+      .when('/hizlariak', {
+        templateUrl: 'views/hizlariak.html',
+        controller: 'HizlariakCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
