@@ -5,7 +5,7 @@ Eibartarren Ahotan Eibarko Udalaren `Egoibarra Batzordearen`_ proiektu bat da, e
 
 Hemen dagoen kode hau, `AngularJS`_ erabiliz garatuta dago Ahotsak_ proiektuaren APIa_ erabiliz.
 
-Kode hau zure ordenagailuan martxan jartzeko deskargatu, eta jarraitu pausu hauek::
+Kode hau zure ordenagailuan martxan jartzeko deskargatu, eta jarraitu pausu hauek(oharra NodeJS_ instalatuta izan behar duzu, npm-k funtzionatzeko)::
 
   $ npm install
   $ bower install
@@ -17,6 +17,7 @@ Proiektua zerbitzari baten jarri nahi baduzu, egin beste hau::
 
 Eta jarraian kopiatu hor sortu den `dist` karpeta zure zerbitzari batera, berdin da Apache, nginx edo dena delakoa erabiltzea, ez du osagai dinamikorik, guztia HTML, CSS eta JavaScript kodea da.
 
+.. _NodeJS: https://nodejs.org
 .. _`AngularJS`: https://www.angularjs.org
 .. _Ahotsak: http://www.ahotsak.com
 .. _APIa: http://www.ahotsak.com/api/dokumentazia
