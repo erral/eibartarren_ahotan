@@ -12,6 +12,22 @@ angular.module('ahotanApp')
     return {
       getHizlaria: function(hizlaria) {
 
+        var url = 'http://www.ahotsak.com/api/hizlariak/' + hizlaria;
+        var params = {
+            giltza: 'emvUIWiLQMqSygTbRtrd',
+            format: 'json',
+            callback: 'JSON_CALLBACK'
+        };
+
+        return $http.jsonp(url, {params: params}).success(
+
+            function(resp){
+                return resp;
+            }
+        );
+      },
+      getHizlariarenPasarteak: function(hizlaria) {
+
         var url = 'http://www.ahotsak.com/api/hizlariak/' + hizlaria + '/pasarteak/';
         var params = {
             giltza: 'emvUIWiLQMqSygTbRtrd',
@@ -25,6 +41,6 @@ angular.module('ahotanApp')
                 return resp;
             }
         );
-      }
+      },
     };
   });

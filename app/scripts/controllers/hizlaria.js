@@ -14,4 +14,9 @@ angular.module('ahotanApp')
             console.log(hizlaria.data);
             $scope.hizlaria = hizlaria.data;
         });
+    hizlariaService.getHizlariarenPasarteak($routeParams.hizlaria)
+        .then(function(pasarteak) {
+            console.log(pasarteak.data);
+            $scope.pasarteak = pasarteak.data;
+        });
   });

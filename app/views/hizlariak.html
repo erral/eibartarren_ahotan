@@ -1,1 +1,28 @@
-<p>This is the hizlariak view.</p>
+<div id="hizlariak">
+
+<p>
+Hauek dira Eibartarren ahotan proiektuan parte hartu duten hizlariak.<br/>
+Egin klik izen bakoitzean, bere pasarteak eta biografia irakurtzeko.
+</p>
+
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <td>Izena</td>
+            <td>Biografia</td>
+        </tr>
+    </thead>
+<tbody>
+    <tr ng-repeat="hizlaria in hizlariak">
+        <td>
+            <a href="#/hizlaria/{{hizlaria.slug}}">
+                {{hizlaria.izena}} {{hizlaria.abizenak}}
+            </a>
+        </td>
+        <td ng-bind-html="hizlaria.biografia">
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>

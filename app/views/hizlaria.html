@@ -2,10 +2,17 @@
 
     <h1>{{hizlaria.izena}} {{hizlaria.abizenak}}</h1>
 
-    <p class="description" ng-bind-html="hizlaria.biografia">
-        Hemen biografia
-    </p>
+    <div id="hizlaria-description">
+      {{hizlaria.data_jaio}} - {{hizlaria.data_hil}}
+      <div class="pull-right" ng-if="hizlaria.argazkia.url != ''">
+        <img src="{{hizlaria.argazkia.url}}" alt="{{hizlaria.izena}} {{hizlaria.abizenak}}"/>
+      </div>
+      <p class="description" ng-bind-html="hizlaria.biografia">
+          Hemen biografia
+      </p>
+    </div>
 
+    <div id="pasarteak">
     <h2>Pasarteak</h2>
 
     <table class="table table-striped">
@@ -17,7 +24,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr ng-repeat="pasartea in hizlaria">
+            <tr ng-repeat="pasartea in pasarteak">
                 <td>{{$index+1}}</td>
                 <td>
                     <a href="#/pasartea/{{pasartea.slug}}">
@@ -71,5 +78,5 @@
             </tr>
         </tbody>
     </table>
-
+  </div>
 </div>
