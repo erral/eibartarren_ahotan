@@ -1,0 +1,36 @@
+<div id="pasarteak">
+
+<p>
+Hauek dira Eibartarren ahotan proiektuan parte hartu duten hizlariekin egindako elkarrizketen ostean prestatutako pasarteak. Hizlarien bizitza eta garai bateko Eibarko bizitza eta ekintzen inguruko elkarrizketak dira guztiak.
+</p>
+
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <td>#</td>
+            <td>Izenburua</td>
+            <td>Hizlariak</td>
+        </tr>
+    </thead>
+<tbody>
+    <tr ng-repeat="pasartea in pasarteak">
+        <td>
+            {{$index}}
+        </td>
+        <td>
+            {{pasartea.izenburua}}
+        </td>
+        <td>
+            <ul>
+                <li ng-repeat="hizlaria in pasartea.hizlariak">
+                    <a href="#/hizlaria/{{hizlaria.slug}}">
+                        {{hizlaria.izena}} {{hizlaria.abizenak}} ({{hizlaria.data_jaio}} - {{hizlaria.data_hil}})
+                    </a>
+                </li>
+            </ul>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>

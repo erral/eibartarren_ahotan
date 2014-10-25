@@ -23,21 +23,21 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
+      .when('/hizlariak', {
+        templateUrl: 'views/hizlariak.html',
+        controller: 'HizlariakCtrl'
       })
       .when('/hizlaria/:hizlaria', {
         templateUrl: 'views/hizlaria.html',
         controller: 'HizlariaCtrl'
       })
+      .when('/pasarteak', {
+        templateUrl: 'views/pasarteak.html',
+        controller: 'PasarteakCtrl'
+      })
       .when('/pasartea/:pasartea', {
         templateUrl: 'views/pasartea.html',
         controller: 'PasarteaCtrl'
-      })
-      .when('/hizlariak', {
-        templateUrl: 'views/hizlariak.html',
-        controller: 'HizlariakCtrl'
       })
       .otherwise({
         redirectTo: '/'
