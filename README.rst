@@ -1,7 +1,7 @@
 Eibartarren Ahotan
 ======================
 
-Eibartarren Ahotan Eibarko Udalaren Egoibarra Batzordearen proiektu bat da, eta bertan Eibarko bizilagunei egindako elkarrizketak biltzen dira, Eibarko euskara, historia eta ahozko ondarea ezagutu eta ezagutzera emateko.
+Eibartarren Ahotan Eibarko Udalaren `Egoibarra Batzordearen`_ proiektu bat da, eta bertan Eibarko bizilagunei egindako elkarrizketak biltzen dira, Eibarko euskara, historia eta ahozko ondarea ezagutu eta ezagutzera emateko.
 
 Hemen dagoen kode hau, `AngularJS`_ erabiliz garatuta dago Ahotsak_ proiektuaren APIa_ erabiliz.
 
@@ -20,3 +20,4 @@ Eta jarraian kopiatu hor sortu den `dist` karpeta zure zerbitzari batera, berdin
 .. _`AngularJS`: https://www.angularjs.org
 .. _Ahotsak: http://www.ahotsak.com
 .. _APIa: http://www.ahotsak.com/api/dokumentazia
+.. _`Egoibarra Batzordearen`: http://egoibarra.com/
