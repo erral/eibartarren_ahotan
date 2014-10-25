@@ -8,10 +8,12 @@
  * Controller of the ahotanApp
  */
 angular.module('ahotanApp')
-  .controller('PasarteaCtrl', function ($scope, $routeParams, pasarteaService) {
+  .controller('PasarteaCtrl', function ($scope, $routeParams, pasarteaService, $sce) {
     pasarteaService.getPasartea($routeParams.pasartea)
         .then(function(pasartea) {
-            console.log(pasartea.data);
             $scope.pasartea = pasartea.data;
+            $scope.audio_player = $sce.trustAsHtml(pasartea.data.audioa_html);
+            $scope.bideo_player = $sce.trustAsHtml(pasartea.data.bideoa_html);
+            console.log($scope.pasartea);
         });
   });
