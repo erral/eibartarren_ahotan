@@ -5,6 +5,8 @@ Eibartarren Ahotan Eibarko Udalaren `Egoibarra Batzordearen`_ proiektu bat da, e
 
 Hemen dagoen kode hau, `AngularJS`_ erabiliz garatuta dago Ahotsak_ proiektuaren APIa_ erabiliz.
 
+Aplikazioa ikusi hemen: https://erral.github.io/eibartarren_ahotan/dist
+
 Kode hau zure ordenagailuan martxan jartzeko deskargatu, eta jarraitu pausu hauek(oharra NodeJS_ instalatuta izan behar duzu, npm-k funtzionatzeko)::
 
   $ npm install
