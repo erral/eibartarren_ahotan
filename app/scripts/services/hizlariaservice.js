@@ -12,7 +12,7 @@ angular.module('ahotanApp')
     return {
       getHizlaria: function(hizlaria) {
 
-        var url = 'http://www.ahotsak.com/api/hizlariak/' + hizlaria;
+        var url = 'https://ahotsak.eus/api/hizlariak/' + hizlaria;
         var params = {
             giltza: 'emvUIWiLQMqSygTbRtrd',
             format: 'json',
@@ -28,7 +28,7 @@ angular.module('ahotanApp')
       },
       getHizlariarenPasarteak: function(hizlaria) {
 
-        var url = 'http://www.ahotsak.com/api/hizlariak/' + hizlaria + '/pasarteak/';
+        var url = 'https://ahotsak.eus/api/hizlariak/' + hizlaria + '/pasarteak/';
         var params = {
             giltza: 'emvUIWiLQMqSygTbRtrd',
             format: 'json',

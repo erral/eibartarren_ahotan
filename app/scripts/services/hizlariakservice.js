@@ -12,7 +12,7 @@ angular.module('ahotanApp')
     return {
       getHizlariak: function() {
 
-        var url = 'http://www.ahotsak.com/api/herriak/eibar/hizlariak/';
+        var url = 'https://ahotsak.eus/api/herriak/eibar/hizlariak/';
         var params = {
             giltza: 'emvUIWiLQMqSygTbRtrd',
             format: 'json',

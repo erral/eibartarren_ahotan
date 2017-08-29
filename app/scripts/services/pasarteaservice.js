@@ -12,7 +12,7 @@ angular.module('ahotanApp')
     return {
       getPasartea: function(pasartea) {
 
-        var url = 'http://www.ahotsak.com/api/pasarteak/' + pasartea;
+        var url = 'https://ahotsak.eus/api/pasarteak/' + pasartea;
         var params = {
             giltza: 'emvUIWiLQMqSygTbRtrd',
             format: 'json',

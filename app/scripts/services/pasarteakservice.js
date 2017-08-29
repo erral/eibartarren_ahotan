@@ -12,7 +12,7 @@ angular.module('ahotanApp')
     return {
       getPasarteak: function() {
 
-        var url = 'http://www.ahotsak.com/api/herriak/eibar/pasarteak/';
+        var url = 'https://ahotsak.eus/api/herriak/eibar/pasarteak/';
         var params = {
             giltza: 'emvUIWiLQMqSygTbRtrd',
             format: 'json',
