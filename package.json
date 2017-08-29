@@ -1,6 +1,7 @@
 {
   "name": "ahotan",
   "version": "1.0.0",
+  "license": "GPL-2.0",
   "dependencies": {},
   "devDependencies": {
     "grunt": "^0.4.1",
